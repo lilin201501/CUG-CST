@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="top.sodagreen.java.exam.y2020.TestThird">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridBagLayout">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="ae017" class="javax.swing.JTextField" binding="textFieldA">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <gridbag weightx="3.0" weighty="1.5"/>
+        </constraints>
+        <properties>
+          <font name="Microsoft YaHei" size="20"/>
+        </properties>
+      </component>
+      <hspacer id="e0132">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+      </hspacer>
+      <component id="7551" class="javax.swing.JTextField" binding="textFieldB">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <gridbag weightx="3.0" weighty="2.0"/>
+        </constraints>
+        <properties>
+          <font name="Microsoft YaHei" size="20"/>
+        </properties>
+      </component>
+      <component id="102bf" class="javax.swing.JTextField" binding="textFieldC">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <gridbag weightx="3.0" weighty="2.0"/>
+        </constraints>
+        <properties>
+          <font name="Microsoft YaHei" size="20"/>
+        </properties>
+      </component>
+      <component id="abafc" class="javax.swing.JTextField" binding="textFieldResult">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <gridbag weightx="3.0" weighty="2.0"/>
+        </constraints>
+        <properties>
+          <font name="Microsoft YaHei" size="20"/>
+        </properties>
+      </component>
+      <component id="fe2be" class="javax.swing.JLabel" binding="labelA">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="2.0"/>
+        </constraints>
+        <properties>
+          <font name="Microsoft YaHei" size="20"/>
+          <text value="系数a: "/>
+        </properties>
+      </component>
+      <component id="8065a" class="javax.swing.JLabel" binding="labelB">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="2.0"/>
+        </constraints>
+        <properties>
+          <font name="Microsoft YaHei" size="20"/>
+          <text value="系数b: "/>
+        </properties>
+      </component>
+      <component id="c2ca8" class="javax.swing.JLabel" binding="labelC">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="2.0"/>
+        </constraints>
+        <properties>
+          <font name="Microsoft YaHei" size="20"/>
+          <text value="系数c: "/>
+        </properties>
+      </component>
+      <component id="3f7de" class="javax.swing.JLabel" binding="labelR">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="2.0"/>
+        </constraints>
+        <properties>
+          <font name="Microsoft YaHei" size="20"/>
+          <text value="方程解: "/>
+        </properties>
+      </component>
+      <component id="3efae" class="javax.swing.JButton" binding="buttonSolute">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <font name="Microsoft YaHei" size="20"/>
+          <text value="解方程"/>
+        </properties>
+      </component>
+      <component id="72885" class="javax.swing.JButton" binding="buttonExit">
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <font name="Microsoft YaHei" size="20"/>
+          <text value="退出"/>
+        </properties>
+      </component>
+      <hspacer id="31f21">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="0.0"/>
+        </constraints>
+      </hspacer>
+      <vspacer id="1b772">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.5"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="1ba7e">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="1.0"/>
+        </constraints>
+      </vspacer>
+    </children>
+  </grid>
+</form>
