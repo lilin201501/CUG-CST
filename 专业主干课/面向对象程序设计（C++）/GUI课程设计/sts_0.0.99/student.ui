@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>student</class>
+ <widget class="QDialog" name="student">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>640</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>640</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>学生用户</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#student{
+background-color: rgb(255, 255, 255);
+border-image: url(:/image/image/backpage_student.png);
+}</string>
+  </property>
+  <widget class="QPushButton" name="button_course_select">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>181</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#button_course_select{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(255,255,255, 255);
+}
+
+QPushButton#button_course_select:hover{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(240,255,255,255);
+}
+ 
+QPushButton#button_course_select:pressed{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(225,255,255, 255);
+padding-left:6px;
+padding-top:6px;
+}</string>
+   </property>
+   <property name="text">
+    <string>选课</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_score_inquiry">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>20</y>
+     <width>311</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#button_score_inquiry{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(255,255,255, 255);
+}
+
+QPushButton#button_score_inquiry:hover{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(240,255,255,255);
+}
+ 
+QPushButton#button_score_inquiry:pressed{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(225,255,255, 255);
+padding-left:6px;
+padding-top:6px;
+}</string>
+   </property>
+   <property name="text">
+    <string>学业情况查询</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_return">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>340</y>
+     <width>181</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#button_return{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(255,255,255, 255);
+}
+
+QPushButton#button_return:hover{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(240,255,255,255);
+}
+ 
+QPushButton#button_return:pressed{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;;
+color: rgb(0, 0, 0);
+background-color: rgba(225,255,255, 255);
+padding-left:6px;
+padding-top:6px;
+}</string>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_judge">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>180</y>
+     <width>181</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#button_judge{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(255,255,255, 255);
+}
+
+QPushButton#button_judge:hover{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(240,255,255,255);
+}
+ 
+QPushButton#button_judge:pressed{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(225,255,255, 255);
+padding-left:6px;
+padding-top:6px;
+}</string>
+   </property>
+   <property name="text">
+    <string>教学评价</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

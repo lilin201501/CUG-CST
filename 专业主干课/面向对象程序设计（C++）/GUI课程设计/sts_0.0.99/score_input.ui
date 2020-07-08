@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>score_input</class>
+ <widget class="QDialog" name="score_input">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>560</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>560</width>
+    <height>640</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>560</width>
+    <height>640</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑</family>
+    <pointsize>18</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>成绩录入</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#score_input{
+background-color: rgb(255, 255, 255);
+border-image: url(:/image/image/backpage_common.png);
+}</string>
+  </property>
+  <widget class="QPushButton" name="button_add">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>30</y>
+     <width>141</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#button_add{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(255,255,255, 255);
+}
+
+QPushButton#button_add:hover{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(240,255,255,255);
+}
+ 
+QPushButton#button_add:pressed{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(225,255,255, 255);
+padding-left:6px;
+padding-top:6px;
+}
+
+QPushButton#button_add:disabled{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(176,196,222);
+background-color: rgba(255,255,255,255);
+padding-left:6px;
+padding-top:6px;
+}</string>
+   </property>
+   <property name="text">
+    <string>添加</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_revision">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>110</y>
+     <width>141</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#button_revision{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(255,255,255, 255);
+}
+
+QPushButton#button_revision:hover{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(240,255,255,255);
+}
+ 
+QPushButton#button_revision:pressed{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(225,255,255, 255);
+padding-left:6px;
+padding-top:6px;
+}
+
+QPushButton#button_revision:disabled{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(176,196,222);
+background-color: rgba(255,255,255,255);
+padding-left:6px;
+padding-top:6px;
+}</string>
+   </property>
+   <property name="text">
+    <string>修改</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_delete">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>190</y>
+     <width>141</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#button_delete{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(255,255,255, 255);
+}
+
+QPushButton#button_delete:hover{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(240,255,255,255);
+}
+ 
+QPushButton#button_delete:pressed{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(225,255,255, 255);
+padding-left:6px;
+padding-top:6px;
+}
+
+QPushButton#button_delete:disabled{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(176,196,222);
+background-color: rgba(255,255,255,255);
+padding-left:6px;
+padding-top:6px;
+}</string>
+   </property>
+   <property name="text">
+    <string>删除</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="line_name">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>140</y>
+     <width>351</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+background-color: rgba(255,255,255,128);</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="placeholderText">
+    <string>姓名</string>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="line_id">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>351</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+background-color: rgba(255,255,255,128);</string>
+   </property>
+   <property name="maxLength">
+    <number>11</number>
+   </property>
+   <property name="placeholderText">
+    <string>学号</string>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="line_class">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>240</y>
+     <width>311</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+background-color: rgba(255,255,255,128);</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="placeholderText">
+    <string>班级</string>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="line_score">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>440</y>
+     <width>311</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+background-color: rgba(255,255,255,128);</string>
+   </property>
+   <property name="placeholderText">
+    <string>成绩</string>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cbb_subject">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>340</y>
+     <width>311</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+QComboBox::down-arrow {
+	image: url(:/image/image/icon/arrow_down.png);
+}
+
+
+QComboBox#cbb_subject{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+background-color: rgba(255,255,255,255);
+}
+
+QComboBox#cbb_subject:hover{
+border-color: rgb(213, 198, 255);
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(255,255,255,255);
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="line_credit">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>540</y>
+     <width>311</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+background-color: rgba(255,255,255,128);</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="placeholderText">
+    <string>学分</string>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

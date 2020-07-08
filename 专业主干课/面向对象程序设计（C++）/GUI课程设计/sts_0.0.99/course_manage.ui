@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>course_manage</class>
+ <widget class="QDialog" name="course_manage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>560</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>560</width>
+    <height>640</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>560</width>
+    <height>640</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑</family>
+   </font>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::NoFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>课程管理</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#course_manage{
+background-color: rgb(255, 255, 255);
+border-image: url(:/image/image/backpage_common.png);
+}</string>
+  </property>
+  <widget class="QLineEdit" name="line_name">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>311</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::StrongFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+background-color: rgba(255,255,255,255);</string>
+   </property>
+   <property name="placeholderText">
+    <string>课程名称</string>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="line_id">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>311</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::StrongFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+background-color: rgba(255,255,255,255);</string>
+   </property>
+   <property name="maxLength">
+    <number>5</number>
+   </property>
+   <property name="placeholderText">
+    <string>课程编号</string>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="line_time">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>560</y>
+     <width>211</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::StrongFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+background-color: rgba(255,255,255,128);</string>
+   </property>
+   <property name="maxLength">
+    <number>3</number>
+   </property>
+   <property name="placeholderText">
+    <string>学时设置</string>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cbb_faculty_op">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>400</y>
+     <width>311</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::WheelFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+QComboBox::down-arrow {
+	image: url(:/image/image/icon/arrow_down.png);
+}
+
+
+QComboBox#cbb_faculty_op{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+background-color: rgba(255,255,255,255);
+}
+
+QComboBox#cbb_faculty_op:hover{
+border-color: rgb(213, 198, 255);
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(255,255,255,255);
+}</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>开课学院</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>地球科学学院</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>资源学院</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>材料与化学学院</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>环境学院</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>工程学院</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>地球物理与空间信息学院</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>海洋学院</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>机械与电子信息学院</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>自动化学院</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>经济管理学院</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>外国语学院</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>地理与信息工程学院</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>数学与物理学院</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>珠宝学院</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>公共管理学院</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>计算机学院</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>体育学院</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>艺术与传媒学院</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>马克思主义学院</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>李四光学院</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>高等教育研究所</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>远程与继续教育学院</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>国际教育学院</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="cbb_credit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>480</y>
+     <width>211</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::WheelFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+QComboBox::down-arrow {
+	image: url(:/image/image/icon/arrow_down.png);
+}
+
+
+QComboBox#cbb_credit{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+background-color: rgba(255,255,255,255);
+}
+
+QComboBox#cbb_credit:hover{
+border-color: rgb(213, 198, 255);
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(255,255,255,255);
+}</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>学分设置</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1.0</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1.5</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2.0</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2.5</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>3.0</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>3.5</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>4.0</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>4.5</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>5.0</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>5.5</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>6.0</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>6.5</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>7.0</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>7.5</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>8.0</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>8.5</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>9.0</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>9.5</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>10.0</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>16.0</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="button_ok">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>20</y>
+     <width>141</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#button_ok{
+
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+
+color: rgb(0, 0, 0);
+background-color: rgba(255,255,255, 128);
+}
+
+QPushButton#button_ok:hover{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(240,255,255,77);
+}
+ 
+QPushButton#button_ok:pressed{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(225,255,255, 144);
+padding-left:6px;
+padding-top:6px;
+}
+
+QPushButton#button_ok:disabled{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(176,196,222);
+background-color: rgba(255,255,255,255);
+padding-left:6px;
+padding-top:6px;
+}</string>
+   </property>
+   <property name="text">
+    <string>添加</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_delete">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>200</y>
+     <width>141</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#button_delete{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(255,255,255, 128);
+}
+
+QPushButton#button_delete:hover{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(240,255,255,77);
+}
+ 
+QPushButton#button_delete:pressed{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(225,255,255, 144);
+padding-left:6px;
+padding-top:6px;
+}
+
+QPushButton#button_delete:disabled{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(176,196,222);
+background-color: rgba(255,255,255,255);
+padding-left:6px;
+padding-top:6px;
+}</string>
+   </property>
+   <property name="text">
+    <string>删除</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_revision">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>110</y>
+     <width>141</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#button_revision{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(255,255,255, 255);
+}
+
+QPushButton#button_revision:hover{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(240,255,255,255);
+}
+ 
+QPushButton#button_revision:pressed{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(225,255,255, 255);
+padding-left:6px;
+padding-top:6px;
+}
+
+QPushButton#button_revision:disabled{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(176,196,222);
+background-color: rgba(255,255,255,255);
+padding-left:6px;
+padding-top:6px;
+}</string>
+   </property>
+   <property name="text">
+    <string>修改</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="line_tname">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>320</y>
+     <width>311</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::StrongFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+background-color: rgba(255,255,255,128);</string>
+   </property>
+   <property name="maxLength">
+    <number>32767</number>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="placeholderText">
+    <string>任课教师姓名</string>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="line_tid">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>240</y>
+     <width>311</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::StrongFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+background-color: rgba(255,255,255,128);</string>
+   </property>
+   <property name="maxLength">
+    <number>11</number>
+   </property>
+   <property name="placeholderText">
+    <string>任课教师工号</string>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cbb_category">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>311</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::WheelFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+QComboBox::down-arrow {
+	image: url(:/image/image/icon/arrow_down.png);
+}
+
+
+QComboBox#cbb_category{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+background-color: rgba(255,255,255,255);
+}
+
+QComboBox#cbb_category:hover{
+border-color: rgb(213, 198, 255);
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(255,255,255,255);
+}</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>课程类别</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>通识教育课</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>学科基础课</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>专业主干课</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>实践环节</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>专业选修课</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>通选课</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>体育分项</string>
+    </property>
+   </item>
+  </widget>
+  <zorder>line_name</zorder>
+  <zorder>line_time</zorder>
+  <zorder>cbb_faculty_op</zorder>
+  <zorder>cbb_credit</zorder>
+  <zorder>button_ok</zorder>
+  <zorder>button_delete</zorder>
+  <zorder>button_revision</zorder>
+  <zorder>line_id</zorder>
+  <zorder>line_tname</zorder>
+  <zorder>line_tid</zorder>
+  <zorder>cbb_category</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>system_display</class>
+ <widget class="QDialog" name="system_display">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1080</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1080</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1080</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑</family>
+    <pointsize>18</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>查询</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QComboBox" name="cbb_findway">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>30</y>
+     <width>301</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+QComboBox::down-arrow {
+	image: url(:/image/image/icon/arrow_down.png);
+}
+
+
+QComboBox#cbb_findway{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+background-color: rgba(255,255,255,255);
+}
+
+QComboBox#cbb_findway:hover{
+border-color: rgb(213, 198, 255);
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(255,255,255,255);
+}</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>请选择查询方式</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>学生</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>教师</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>课程</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="button_search">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>30</y>
+     <width>141</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#button_search{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(255,255,255, 255);
+}
+
+QPushButton#button_search:hover{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(240,255,255,255);
+}
+ 
+QPushButton#button_search:pressed{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(225,255,255, 255);
+padding-left:6px;
+padding-top:6px;
+}</string>
+   </property>
+   <property name="text">
+    <string>搜索</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>120</y>
+     <width>1101</width>
+     <height>601</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">selection-background-color: qlineargradient(x1: 0, y1: 0, x2: 0.93, y2: 0.93,stop: 0 #1E90FF, stop: 1 white);
+
+QHeaderView {
+    font: bold 14pt;
+}</string>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::DoubleClicked</set>
+   </property>
+   <property name="sortingEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_save">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>30</y>
+     <width>141</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#button_save{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(255,255,255, 255);
+}
+
+QPushButton#button_save:hover{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(240,255,255,255);
+}
+ 
+QPushButton#button_save:pressed{
+border:1px groove gray;
+border-radius:5px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgba(225,255,255, 255);
+padding-left:6px;
+padding-top:6px;
+}</string>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
