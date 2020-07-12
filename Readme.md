@@ -8,9 +8,13 @@ repo 结构依照 2018计算机科学与技术的培养方案进行组织，部�
 
 欢迎 star/ fork，更新中......
 
-**如需下载单个文件夹，复制该文件夹的网址，粘贴入[DownGit](https://minhaskamal.github.io/DownGit/#/home)中，选择download即可**
+**只下载单个文件夹方法**
 
-**教材可自行在网上检索，不再提供，推荐 [https://libgen.is/](https://libgen.is/)** 
+* 使用 Chrome 插件 [gitzip](https://gitzip.org/)，使用方法参考[插件官网](https://gitzip.org/)
+
+* 使用第三方网站：[DownGit](https://minhaskamal.github.io/DownGit/#/home)，复制该文件夹的网址，粘贴入[DownGit](https://minhaskamal.github.io/DownGit/#/home)中，选择download即可
+
+**教材可自行在网上检索，不再提供，推荐网站 [https://libgen.is/](https://libgen.is/)** 
 
 # 目录
 
